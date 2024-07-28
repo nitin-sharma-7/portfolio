@@ -1,0 +1,63 @@
+body {
+  position: relative;
+  background-color: black;
+  background: linear-gradient(-45deg, #ff4141, #de2d71, #952de5, #a3aa20f4);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  border: 1px solid black;
+  background-image: url("images/snakeandladder.png");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+}
+.player {
+  height: 50px;
+  width: 50px;
+  /* background-image: url("player.png"); */
+  background-color: black;
+  background-size: cover;
+  z-index: 1000;
+}
+.rollDice {
+  background-image: url(images/dice6.png);
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 250px;
+  left: 86%;
+}
+@media (max-width: 750px) {
+  .rollDice {
+    left: 43%;
+    top: 600px;
+  }
+}
+.state {
+  font-size: 40px;
+  font-family: "Sevillana", cursive;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
