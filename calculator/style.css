@@ -1,0 +1,54 @@
+button {
+  border: none;
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+
+  background-color: black;
+}
+.output {
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.buttons {
+  display: flex;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits {
+  font-size: 20px;
+  font-weight: 700;
+}
+button:active {
+  background-color: rgb(170, 170, 24);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ff4141, #de2d71, #952de5, #a3aa20f4);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

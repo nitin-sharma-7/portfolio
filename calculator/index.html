@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input class="output" type="text" id="result" />
+      <div class="buttons">
+        <div class="numbers">
+          <button class="digits" onclick="addInResult('9')">9</button>
+          <button class="digits" onclick="addInResult('8')">8</button>
+          <button class="digits" onclick="addInResult('7')">7</button>
+          <button class="digits" onclick="addInResult('6')">6</button>
+          <button class="digits" onclick="addInResult('5')">5</button>
+          <button class="digits" onclick="addInResult('4')">4</button>
+          <button class="digits" onclick="addInResult('3')">3</button>
+          <button class="digits" onclick="addInResult('2')">2</button>
+          <button class="digits" onclick="addInResult('1')">1</button>
+          <button class="digits" onclick="addInResult('0')">0</button>
+          <button class="digits" onclick="addInResult('00')">00</button>
+          <button class="digits" onclick="addInResult('.')">.</button>
+        </div>
+        <div class="operations">
+          <button class="digits" onclick="addInResult('+')">+</button>
+          <button class="digits" onclick="addInResult('-')">-</button>
+          <button class="digits" onclick="addInResult('*')">*</button>
+          <button class="digits" onclick="addInResult('/')">/</button>
+        </div>
+      </div>
+      <div>
+        <button class="digits" onclick="equal()" class="euqal common">=</button>
+        <button class="digits" onclick="clearResult()">CLR</button>
+        <button class="digits" onclick="deleteLastFromResult()">del</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
