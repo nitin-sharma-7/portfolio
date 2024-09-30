@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World In Hand</title>
+    <link rel="stylesheet" href="country.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+    <script src="country.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h2 onclick="location.reload()">World In Hand</h2>
+        <span class="dark-mode"
+          ><i class="fa-regular fa-moon"></i> Dark Mode</span
+        >
+      </div>
+    </header>
+    <main>
+      <a class="button" onclick="history.back()"
+        ><i class="fa-solid fa-arrow-left">&nbsp;&nbsp;</i>Back</a
+      >
+      <div class="country-page"></div>
+    </main>
+  </body>
+</html>
