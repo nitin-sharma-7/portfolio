@@ -1,0 +1,195 @@
+/* Global styles for the entire document */
+* {
+    font-family: "Poppins", sans-serif; /* Set font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-decoration: none; /* Remove text decoration */
+    border: none; /* Remove default border */
+    color: rgb(77, 76, 76); /* Set default text color */
+    background-color: antiquewhite; /* Set default background color */
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Vertical padding */
+    margin-bottom: 20px; /* Space below header */
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+.main-section p{
+    width: 80%px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container for student details */
+.student-details {
+    display: flex; /* Use flexbox for layout */
+    flex-grow: 0; /* Prevent growing */
+    width: 100vw; /* Full viewport width */
+    justify-content: space-around; /* Space items evenly */
+    margin-top: 20px; /* Space above the container */
+    height: 410px; /* Fixed height */
+}
+
+/* Form container styles */
+.form-container {
+    display: flex; /* Use flexbox for layout */
+    width: 24vw; /* Set width of the form */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Stack items vertically */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 30px;
+    border: 1px solid gray; /* Border around the form */
+}
+
+/* Hover effect for form container */
+.form-container:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, 
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; /* Shadow effect on hover */
+}
+
+/* Input field styles within the form */
+.form-container input {
+    width: 20vw; /* Set width of input fields */
+    margin: 12px 0; /* Vertical margin */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px 10px; /* Padding inside input */
+    background-color: rgb(243, 241, 238); /* Light background color */
+}
+
+.add-button{
+    border: 1px solid grey;
+    padding:4px 10px ;
+    margin-bottom: 14px;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: rgb(212, 228, 239);
+}
+/* Hover effect for input fields */
+.form-container input:hover,.add-button:hover {
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    transition: all .3s; /* Smooth transition */
+    background-color: white; /* Change background color on hover */
+}
+
+/* Table styles */
+th,tr,td{
+    border:  1px solid grey;
+    border-collapse: collapse;
+    padding-left:10px ;
+    text-align: center;
+}
+.table {
+    display: block; /* Use block display for table */
+    width: 650px;
+    border: 1px solid grey;
+}
+.head-table th{
+    position: sticky;
+    top: 0;
+}
+
+.table-raw{
+    height: 60px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*  */
+/*  */
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    header {
+        font-size: 24px; /* Adjust header font size */
+    }
+
+    .main-section p {
+        font-size: 16px; /* Adjust paragraph font size */
+        width: 90%; /* Adjust paragraph width */
+    }
+
+    .student-details {
+        flex-direction: column; /* Stack student details vertically */
+        align-items: center; /* Center items */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .form-container {
+        width: 80vw; /* Increase width for smaller screens */
+    }
+
+    .add-button {
+        font-size: 18px; /* Adjust button font size */
+        padding: 6px 12px; /* Increase padding for better touch targets */
+    }
+
+    th, td {
+        font-size: 14px; /* Adjust font size for table cells */
+    }
+
+    .table {
+        width: 100%; /* Full width for tables */
+    }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px; /* Further adjust header font size */
+        padding: 15px 0; /* Increase padding for better touch targets */
+    }
+
+    .main-section p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+
+    .form-container {
+        width: 90vw; /* Further increase width for mobile */
+    }
+
+    .add-button {
+        font-size: 16px; /* Adjust button font size */
+        padding: 5px 10px; /* Adjust padding */
+    }
+
+    th, td {
+        font-size: 12px; /* Adjust font size for table cells */
+    }
+
+    .table-raw {
+        height: auto; /* Allow row height to adjust */
+    }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        font-size: 18px; /* Adjust header font size */
+    }
+
+    .main-section p {
+        font-size: 12px; /* Adjust paragraph font size */
+    }
+    .form-container{
+        margin-bottom: 30px;
+    }
+    .form-container input {
+        width: 80%; /* Full width for input fields */
+    }
+
+    .add-button {
+        width: 100%; /* Full width for buttons */
+        font-size: 14px; /* Adjust button font size */
+    }
+
+    th, td {
+        font-size: 10px; /* Adjust font size for table cells */
+    }
+}

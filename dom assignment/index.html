@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design for mobile devices -->
+    <title>Student Registration Form</title>
+    <!-- Title of the webpage -->
+
+    <!-- Favicon for the webpage -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/128/3135/3135810.png"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link to external JavaScript file, loaded after the HTML is parsed -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Students Registration</h1>
+      <!-- Main title of the page -->
+    </header>
+
+    <main class="main-section">
+      <p>
+        The Student Registration Form enables students to register for a fest by
+        providing their name, ID, email, and contact number. It features a
+        dynamic display of registered participants and options to edit or delete
+        entries, ensuring an efficient and user-friendly registration
+        experience.
+      </p>
+      <div class="student-details">
+        <form action="/" method="post" class="form-container">
+          <!-- Form for student registration -->
+          <!-- Input for Student Name -->
+          <label for="name">Student Name :</label>
+          <input type="text" class="input" id="name" name="student-name" />
+
+          <!-- Input for Student ID -->
+          <label for="id">Student ID :</label>
+          <input type="number" class="input" name="student-id" id="id" />
+
+          <!-- Input for Email ID -->
+          <label for="email">Email ID :</label>
+          <input type="email" class="input" name="email" id="email" />
+
+          <!-- Input for Contact Number -->
+          <label for="contact">Contact No :</label>
+          <input type="number" class="input" name="contact" id="contact" />
+
+          <!-- Button to add the student -->
+          <button class="add-button">
+            <i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add
+          </button>
+        </form>
+
+        <!-- Table to display registered students -->
+        <table class="table">
+          <thead>
+            <tr class="head-table">
+              <th>Student Name</th>
+              <th>Student ID</th>
+              <th>Email ID</th>
+              <th>Contact No</th>
+              <th colspan="2">
+                Total students : <span class="total-students"></span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table-body"></tbody>
+          <!-- Body of the table where student data will be rendered -->
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
