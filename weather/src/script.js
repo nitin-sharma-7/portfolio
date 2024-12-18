@@ -107,7 +107,7 @@ currentLocaion.addEventListener("click", currrentLocation);
 async function fetchData(p) {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=9b3c7cb761f84f48aa0145626240712&q=${p}&days=5`
+      `https://api.weatherapi.com/v1/forecast.json?key=9b3c7cb761f84f48aa0145626240712&q=${p}&days=5`
     );
     if (response.status == 400) {
       alert("please check city name"); // Alert if city name is invalid
